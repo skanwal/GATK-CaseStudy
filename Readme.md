@@ -6,6 +6,7 @@ The information about data used in the study is provided in 'Data' directory.
 
 'Galaxy' directory contains the instructions to implement GATK workflow using an examplar workflow from "Standardized approaches to Workflow Definition"
 
+'SupplementaryInformation' provides files containing execution details of the workflow.   
 
 
 
