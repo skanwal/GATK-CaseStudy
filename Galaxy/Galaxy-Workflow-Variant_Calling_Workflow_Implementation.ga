@@ -1,0 +1,476 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Variant Calling Workflow Implementation", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 10
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "3a5752a3-517c-43b7-b975-21e7510e65eb"
+        }, 
+        "1": {
+            "annotation": "", 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 130
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "471fcd9c-262f-4716-9d4b-3295048f7e66"
+        }, 
+        "2": {
+            "annotation": "", 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 250
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "7f913fd8-bee7-4b7d-b343-a3043b61dcb3"
+        }, 
+        "3": {
+            "annotation": "", 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 370
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "bad74eb3-f82a-430a-a1a5-275df12adf48"
+        }, 
+        "4": {
+            "annotation": "", 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 490
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "c3b510e2-db1b-459a-bab4-205b1ce7b09b"
+        }, 
+        "5": {
+            "annotation": "", 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 610
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "4f2b7838-1ba4-451d-b94c-15bdb763f07e"
+        }, 
+        "6": {
+            "annotation": "", 
+            "id": 6, 
+            "input_connections": {
+                "fastq_input|fastq_input1": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "fastq_input|fastq_input2": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Map with BWA-MEM", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.12.1", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"rg\": \"{\\\"rg_selector\\\": \\\"set\\\", \\\"KS\\\": \\\"\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"False\\\", \\\"SM\\\": \\\"chr21\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"False\\\", \\\"LB\\\": \\\"L001\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"False\\\", \\\"ID\\\": \\\"chr21\\\", \\\"__current_case__\\\": 1}, \\\"PG\\\": \\\"\\\", \\\"__current_case__\\\": 1, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\", \\\"FO\\\": \\\"\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": null, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"__current_case__\\\": 0, \\\"fastq_input1\\\": null}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"index_a\\\": \\\"bwtsw\\\"}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "f622d596-30ea-4685-940e-4ec1ecdc10fc"
+        }, 
+        "7": {
+            "annotation": "", 
+            "id": 7, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 6, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "MarkDuplicates", 
+            "outputs": [
+                {
+                    "name": "metrics_file", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "outFile", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/1.136.0", 
+            "tool_state": "{\"duplicate_scoring_strategy\": \"\\\"SUM_OF_BASE_QUALITIES\\\"\", \"remove_duplicates\": \"\\\"False\\\"\", \"read_name_regex\": \"\\\"[a-zA-Z0-9]+:[0-9]:([0-9]+):([0-9]+):([0-9]+).*.\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"optical_duplicate_pixel_distance\": \"\\\"100\\\"\", \"comments\": \"[]\", \"assume_sorted\": \"\\\"True\\\"\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"validation_stringency\": \"\\\"LENIENT\\\"\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\", \"inputFile\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "3bc74f8c-2514-4c25-996c-ab28dca05bef"
+        }, 
+        "8": {
+            "annotation": "", 
+            "id": 8, 
+            "input_connections": {
+                "reference_source|input_bam": {
+                    "id": 7, 
+                    "output_name": "outFile"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_0|rod_bind_type|input_rod": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_1|rod_bind_type|input_rod": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_2|rod_bind_type|input_rod": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Realigner Target Creator", 
+            "outputs": [
+                {
+                    "name": "output_interval", 
+                    "type": "gatk_interval"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 670, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/realigner_target_creator/gatk_realigner_target_creator/0.0.4", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"gatk_param_type\": \"{\\\"gatk_param_type_selector\\\": \\\"advanced\\\", \\\"pedigree_string_repeat\\\": [], \\\"disable_experimental_low_memory_sharding\\\": \\\"False\\\", \\\"pedigree_validation_type\\\": \\\"STRICT\\\", \\\"pedigree\\\": [], \\\"input_interval_repeat\\\": [], \\\"baq\\\": \\\"OFF\\\", \\\"input_exclude_interval_repeat\\\": [], \\\"default_base_qualities\\\": \\\"-1\\\", \\\"downsampling_type\\\": {\\\"downsampling_type_selector\\\": \\\"NONE\\\", \\\"__current_case__\\\": 0}, \\\"interval_merging\\\": \\\"ALL\\\", \\\"interval_set_rule\\\": \\\"UNION\\\", \\\"non_deterministic_random_seed\\\": \\\"False\\\", \\\"__current_case__\\\": 1, \\\"read_filter\\\": [], \\\"validation_strictness\\\": \\\"STRICT\\\", \\\"baq_gap_open_penalty\\\": \\\"40.0\\\", \\\"read_group_black_list_repeat\\\": [], \\\"use_original_qualities\\\": \\\"False\\\"}\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"analysis_param_type\": \"{\\\"maxIntervalSize\\\": \\\"500\\\", \\\"minReadsAtLocus\\\": \\\"4\\\", \\\"windowSize\\\": \\\"10\\\", \\\"analysis_param_type_selector\\\": \\\"advanced\\\", \\\"mismatchFraction\\\": \\\"0.15\\\", \\\"__current_case__\\\": 1}\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": null, \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\", \"rod_bind\": \"[{\\\"__index__\\\": 0, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"dbsnp\\\", \\\"__current_case__\\\": 0, \\\"input_rod\\\": null}}, {\\\"__index__\\\": 1, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"indels\\\", \\\"__current_case__\\\": 2, \\\"input_rod\\\": null}}, {\\\"__index__\\\": 2, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"indels\\\", \\\"__current_case__\\\": 2, \\\"input_rod\\\": null}}]\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "2ea6b125-4765-4870-bb67-65a9ef63d4b1"
+        }, 
+        "9": {
+            "annotation": "", 
+            "id": 9, 
+            "input_connections": {
+                "reference_source|input_bam": {
+                    "id": 7, 
+                    "output_name": "outFile"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_0|rod_bind_type|input_rod": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_1|rod_bind_type|input_rod": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_2|rod_bind_type|input_rod": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "target_intervals": {
+                    "id": 8, 
+                    "output_name": "output_interval"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Indel Realigner", 
+            "outputs": [
+                {
+                    "name": "output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 890, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/indel_realigner/gatk_indel_realigner/0.0.6", 
+            "tool_state": "{\"__page__\": 0, \"knowns_only\": \"\\\"False\\\"\", \"gatk_param_type\": \"{\\\"gatk_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"lod_threshold\": \"\\\"5.0\\\"\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"analysis_param_type\": \"{\\\"analysis_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"target_intervals\": \"null\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": null, \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"rod_bind\": \"[{\\\"__index__\\\": 0, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"dbsnp\\\", \\\"__current_case__\\\": 0, \\\"input_rod\\\": null}}, {\\\"__index__\\\": 1, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"indels\\\", \\\"__current_case__\\\": 2, \\\"input_rod\\\": null}}, {\\\"__index__\\\": 2, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"indels\\\", \\\"__current_case__\\\": 2, \\\"input_rod\\\": null}}]\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "dcc78759-ff50-46c5-b630-5a599f554940"
+        }, 
+        "10": {
+            "annotation": "", 
+            "id": 10, 
+            "input_connections": {
+                "reference_source|input_bam": {
+                    "id": 9, 
+                    "output_name": "output_bam"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "rod_bind_0|rod_bind_type|input_rod": {
+                    "id": 4, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Base Recalibrator", 
+            "outputs": [
+                {
+                    "name": "output_recal", 
+                    "type": "gatk_report"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1110, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_base_recalibrator/2.8.0", 
+            "tool_state": "{\"__page__\": 0, \"gatk_param_type\": \"{\\\"gatk_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_recal\": \"null\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"covariates\": \"[\\\"ContextCovariate\\\", \\\"CycleCovariate\\\"]\", \"analysis_param_type\": \"{\\\"analysis_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": null, \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\", \"rod_bind\": \"[{\\\"__index__\\\": 0, \\\"rod_bind_type\\\": {\\\"rod_bind_type_selector\\\": \\\"dbsnp\\\", \\\"__current_case__\\\": 0, \\\"input_rod\\\": null}}]\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "b6e43d9c-eb2d-407f-8d2e-9b51440170ea"
+        }, 
+        "11": {
+            "annotation": "", 
+            "id": 11, 
+            "input_connections": {
+                "input_recal": {
+                    "id": 10, 
+                    "output_name": "output_recal"
+                }, 
+                "reference_source|input_bam": {
+                    "id": 9, 
+                    "output_name": "output_bam"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Print Reads", 
+            "outputs": [
+                {
+                    "name": "output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_print_reads/2.8.0", 
+            "tool_state": "{\"__page__\": 0, \"gatk_param_type\": \"{\\\"gatk_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_recal\": \"null\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"analysis_param_type\": \"{\\\"analysis_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": null, \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "3430f702-e2b2-4508-b52a-540acc0345bf"
+        }, 
+        "12": {
+            "annotation": "", 
+            "id": 12, 
+            "input_connections": {
+                "dbsnp_rod_bind_type|dbsnp_input_rod": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "reference_source|input_bams_0|input_bam": {
+                    "id": 11, 
+                    "output_name": "output_bam"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Haplotype Caller", 
+            "outputs": [
+                {
+                    "name": "output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "graph_out", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "active_region_out", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1550, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gatk2/gatk2_haplotype_caller/2.8.0", 
+            "tool_state": "{\"__page__\": 0, \"gatk_param_type\": \"{\\\"gatk_param_type_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"dbsnp_rod_bind_type\": \"{\\\"dbsnp_rod_bind_type_selector\\\": \\\"set_dbsnp\\\", \\\"dbsnp_input_rod\\\": null, \\\"__current_case__\\\": 1, \\\"dbsnp_rod_name\\\": \\\"dbsnp\\\"}\", \"__workflow_invocation_uuid__\": \"\\\"0c202ce4382a11e68ea4fa163e1ee46f\\\"\", \"analysis_param_type\": \"{\\\"max_alternate_alleles\\\": \\\"6\\\", \\\"gcpHMM\\\": \\\"10\\\", \\\"pair_hmm_implementation\\\": \\\"LOGLESS_CACHING\\\", \\\"genotyping_mode_type\\\": {\\\"genotyping_mode\\\": \\\"DISCOVERY\\\", \\\"__current_case__\\\": 0}, \\\"group\\\": null, \\\"activeRegionOut\\\": \\\"False\\\", \\\"useAllelesTrigger\\\": \\\"False\\\", \\\"contamination_fraction_to_filter\\\": \\\"0.05\\\", \\\"minPruning\\\": \\\"1\\\", \\\"genotypeFullActiveRegion\\\": \\\"False\\\", \\\"comp\\\": null, \\\"activeRegionIn\\\": null, \\\"analysis_param_type_selector\\\": \\\"advanced\\\", \\\"heterozygosity\\\": \\\"0.001\\\", \\\"graphOutput\\\": \\\"False\\\", \\\"fullHaplotype\\\": \\\"False\\\", \\\"annotation\\\": {\\\"__class__\\\": \\\"UnvalidatedValue\\\", \\\"value\\\": null}, \\\"additional_annotations\\\": [], \\\"exclude_annotations\\\": {\\\"__class__\\\": \\\"UnvalidatedValue\\\", \\\"value\\\": null}, \\\"standard_min_confidence_threshold_for_emitting\\\": \\\"30.0\\\", \\\"standard_min_confidence_threshold_for_calling\\\": \\\"30.0\\\", \\\"__current_case__\\\": 1, \\\"debug\\\": \\\"False\\\", \\\"emitRefConfidence\\\": \\\"NONE\\\"}\", \"input_recal\": \"null\", \"reference_source\": \"{\\\"ref_file\\\": null, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bams\\\": [{\\\"__index__\\\": 0, \\\"input_bam\\\": null}], \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/mnt/galaxy/galaxy-app/tool-data/len/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "a549faf2-5e6d-48a3-a646-d96196478d9d"
+        }
+    }, 
+    "uuid": "12d7a888-241a-4bd7-b634-238d4b700140"
+}
