@@ -1,4 +1,4 @@
-The data used in the study is provided in DataAvailability.md file
+The information about data used in the study is provided in DataAvailability directory.
 
 GATKWorkflow-Cpipe contains the instructions to implement GATK workflow using an examplar approach from "Bioinformatics prebuilt Pipelines".
 
