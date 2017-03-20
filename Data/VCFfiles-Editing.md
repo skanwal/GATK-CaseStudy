@@ -1,3 +1,4 @@
+# Post processing of the final output VCF files:
 The VCF files produced by the three workflows as well as the truthset (NA12878-Truthset.vcf) were filtered with chromosome 21 exome coordinates using VCFtools-0.1.13 (https://sourceforge.net/projects/vcftools/files/) with the following command:   
 
 *vcftools –vcf PATH_TO_VCF_File–bed broadinstitute-human-exomechr21.bed --recode –keep-INFO-all*
