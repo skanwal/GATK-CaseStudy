@@ -1,3 +1,5 @@
+  # A Repository providing resources supporting implementation of Variant Calling Workflow on exemplar workflow systems
+
 The information about data used in the study is provided in 'Data' directory.
 
 'Cpipe' directory contains the instructions to implement GATK workflow using an examplar approach from "Bioinformatics prebuilt Pipelines".
