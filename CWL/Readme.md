@@ -2,7 +2,7 @@
 1. Install the specific version of cwltool used in this analysis using pip:
     *  *pip install cwltool==1.0.20150915034626*
     
-2. Download the CWL specifications for tools and workflow along with the JSON file used in the analysis from https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/WorkflowFiles/GATK-CWL-WorkflowFiles.tar.gz.
+2. Download the CWL specifications for tools and workflow along with the JSON file used in the analysis from https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/WorkflowFiles/GATK-CWL-WorkflowFiles.tar.gz. Alternatively these files are provided here as well named as GATK-CWL-WorkflowFiles.tar.gz. 
 
 3. Download input data provided and modify the JSON file (*GATK-complete-Workflow.json*) to add paths for the input, reference sequence (*hg19.fasta*) and known variant files. Make sure to download the index files (_hg19.fasta.*_) provided along with the reference sequence and place them in the same directory as *hg19.fasta*.
 
