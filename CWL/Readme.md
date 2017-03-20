@@ -10,3 +10,5 @@
 
 5. Run the analysis using the following sample command:
     * *cwltool --debug --tmpdir-prefix=PATH_TO/CURRENTDIR/TEMPDIR --tmp-outdir-prefix PATH_TO/CURRENTDIR/TEMPDIR ./GATK-complete-Workflow.cwl ./GATK-complete-Workflow.json*
+    
+6. The final output of the workflow named as 'CWL-broad-filtered.recode.vcf' is provided for comparisons of results. 
