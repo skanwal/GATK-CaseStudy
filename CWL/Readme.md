@@ -1,4 +1,4 @@
-# Instructions to run CWL workflow:
+# Instructions to reproduce GATK variant calling using CWL:
 1. Install the specific version of cwltool used in this analysis using pip:
     *  *pip install cwltool==1.0.20150915034626*
     
