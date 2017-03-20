@@ -1,5 +1,8 @@
 # GATK-CaseStudy
+
 GATK Variant Calling Workflow using Galaxy, CWL and Cpipe
+The data used in this case study is provided via a cloud container as detailed below becasue of size limitation of git repository. 
+
 ## Data Availability: 
 1. The data used in this analysis can be downloaded from the Cloud container: https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data.
 2. This container will display the directory structure and names of all the files included in it such as: 
