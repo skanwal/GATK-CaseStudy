@@ -10,5 +10,7 @@ The information about data used in the study is provided in 'Data' directory.
 
 'SupplementaryMaterial' provides files containing execution details of the workflow.   
 
+Note: These resources are published to satisfy the open-access to the data and methods used in published study: https://doi.org/10.1186/s12859-017-1747-0
+
 
 
