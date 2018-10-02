@@ -24,7 +24,7 @@ The data used in this case study is provided via a cloud container as detailed b
       * Truthset and interval bed file:
         1. broadinstitute-human-exomechr21.bed (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/InputData/broadinstitute-human-exomechr21.bed)
         2. chr21-truthset-annotated.recode.vcf (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/InputData/chr21-truthset-annotated.recode.vcf
-        3. NA12878-Truthset.vcf (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/InputData NA12878-Truthset.vcf)
+        3. NA12878-Truthset.vcf (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/InputData/NA12878-Truthset.vcf)
       * Resultant variant (vcf) files
         1. Galaxy workflow - Galaxy-broad-filtered.recode.vcf (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/Results/Galaxy-broad-filtered.recode.vcf)
         2. Cpipe workflow - cpipe-broad-filtered.recode.vcf (https://swift.rc.nectar.org.au:8888/v1/AUTH_377/Paper-Data/Results/cpipe-broad-filtered.recode.vcf)
